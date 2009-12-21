@@ -18,19 +18,8 @@ Solr example configuration
 
 To run this example configuration, use 
 
-  java -jar start.jar
+  ./start.sh
 
 in this directory, and when Solr is started connect to 
 
   http://localhost:8983/solr/admin/
-
-To add documents to the index, use the post.sh script in
-the exampledocs subdirectory (while Solr is running),
-for example:
-
-  cd exampledocs
-  ./post.sh *.xml
-
-See also README.txt in the solr subdirectory, and check
-http://wiki.apache.org/solr/SolrResources for a list of
-tutorials and introductory articles.
