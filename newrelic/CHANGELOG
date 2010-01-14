@@ -1,0 +1,4 @@
+v1.0.005.
+  * switched from org.json to JSON.simple for json serialization
+  * use a less verbose json format (more arrays, less hashes)
+  * make the log_level setting hot so the log level can be changed without restarting the agent
