@@ -5,9 +5,9 @@ env = ARGV.first
 port = if env.eql? 'production'
   8983
 elsif env.eql? 'test'
-  8982
-else
   8981
+else
+  8982
 end
 
 cmd = "java -server -d64 -Xmx1024M -Xms64M -javaagent:'./newrelic/newrelic.jar' -Djetty.logs='./logs' -Dsolr.solr.home='./solr' -Dsolr.data.dir='./data' -Djetty.port=#{port} -jar start.jar"
