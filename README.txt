@@ -16,10 +16,17 @@
 Solr example configuration
 --------------------------
 
-To run this example configuration, use 
+To start, execute
 
-  ./start.sh
+  #development => port 8982
+  ./start
+  
+  #test => port 8981
+  ./start test
+  
+  #production => port 8983
+  ./start production
 
-in this directory, and when Solr is started connect to 
+When Solr is started connect, to 
 
-  http://localhost:8983/solr/admin/
+  http://<host>:<port>/solr/admin/
