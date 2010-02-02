@@ -596,6 +596,7 @@
       <str name="field">spell</str>
       <str name="spellcheckIndexDir">./spellchecker1</str>
       <str name="buildOnCommit">true</str>
+      <str name="buildOnOptimize">true</str>
     </lst>
     
     <lst name="spellchecker">
