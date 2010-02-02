@@ -431,6 +431,10 @@
        <str name="version">2.1</str>
         -->
      </lst>
+     
+     <arr name="last-components">
+       <str>spellcheck</str>
+     </arr>
   </requestHandler>
 
 <!-- Please refer to http://wiki.apache.org/solr/SolrReplication for details on configuring replication -->
@@ -593,13 +597,12 @@
       <str name="spellcheckIndexDir">./spellchecker1</str>
 
     </lst>
+    
     <lst name="spellchecker">
       <str name="name">jarowinkler</str>
       <str name="field">spell</str>
-      <!-- Use a different Distance Measure -->
       <str name="distanceMeasure">org.apache.lucene.search.spell.JaroWinklerDistance</str>
       <str name="spellcheckIndexDir">./spellchecker2</str>
-
     </lst>
 
     <lst name="spellchecker">
