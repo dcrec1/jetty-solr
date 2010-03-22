@@ -56,6 +56,7 @@
         <filter class="solr.LowerCaseFilterFactory"/>
         <filter class="solr.EnglishPorterFilterFactory" protected="protwords.txt"/>
         <filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
+        <charFilter class="solr.MappingCharFilterFactory" mapping="mapping-ISOLatin1Accent.txt"/>
       </analyzer>
       <analyzer type="query">
         <tokenizer class="solr.WhitespaceTokenizerFactory"/>
@@ -65,6 +66,7 @@
         <filter class="solr.LowerCaseFilterFactory"/>
         <filter class="solr.EnglishPorterFilterFactory" protected="protwords.txt"/>
         <filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
+        <charFilter class="solr.MappingCharFilterFactory" mapping="mapping-ISOLatin1Accent.txt"/>
       </analyzer>
     </fieldType>
 
@@ -77,6 +79,7 @@
         <filter class="solr.LowerCaseFilterFactory"/>
         <filter class="solr.EnglishPorterFilterFactory" protected="protwords.txt"/>
         <filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
+        <charFilter class="solr.MappingCharFilterFactory" mapping="mapping-ISOLatin1Accent.txt"/>
       </analyzer>
     </fieldType>
 
@@ -98,6 +101,7 @@
         <tokenizer class="solr.StandardTokenizerFactory"/>
         <filter class="solr.LowerCaseFilterFactory"/>
         <filter class="solr.RemoveDuplicatesTokenFilterFactory"/>
+        <charFilter class="solr.MappingCharFilterFactory" mapping="mapping-ISOLatin1Accent.txt"/>
       </analyzer>
     </fieldType>
 
